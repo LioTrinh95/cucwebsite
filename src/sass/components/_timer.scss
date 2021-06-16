@@ -1,0 +1,9 @@
+.timer {
+    &__span {
+        font-size: 80px;
+
+        &-miniseconds {
+            font-size: 20px;
+        }
+    }
+}

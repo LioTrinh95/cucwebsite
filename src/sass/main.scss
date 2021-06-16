@@ -1,0 +1,36 @@
+@import "base/base";
+
+//import abstracts
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+//import layout
+@import "layout/gird";
+//import utils
+@import "utils/utils";
+
+//import component
+@import "components/header";
+@import "components/navbar";
+@import "components/about";
+@import "components/section";
+@import "components/motivationalmusic";
+@import "components/musicplay";
+@import "components/song";
+@import "components/slide";
+@import "components/slideshow";
+@import "components/english";
+@import "components/dots";
+@import "components/stopwatch";
+@import "components/timer";
+@import "components/timerbutton";
+@import "components/timergridview";
+@import "components/pomodoro";
+@import "components/pomodorotimer";
+@import "components/pomodoroButton";
+@import "components/pomodorotimecontroller";
+@import "components/timemanagement";
+@import "components/clock";
+@import "components/viewmore";
+@import "components/portfolio";
+@import "components/footer";

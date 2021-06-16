@@ -1,0 +1,71 @@
+.musicplay {
+    width: 400px;
+    border: 1px solid;
+    padding: 8px 0 8px 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: $green;
+    @include responsive(765px) {
+        align-items: center;
+    }
+
+
+    &__name {
+        text-align: center;
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        & .btn {
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        & .btn.active {
+            color: var(--primary-color);
+        }
+
+        & .btn-toggle-play {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            font-size: 24px;
+            color: #fff;
+        }
+
+        & .btn-repeat.active {
+            color: #fff;
+        }
+
+        & .btn-random.active {
+            color: #fff;
+        }
+    }
+    .musicplay__content {
+        padding: 0 28px;
+
+        &-progress {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 6px;
+            background: #d3d3d3;
+            outline: none;
+            opacity: 0.7;
+            -webkit-transition: 0.2s;
+            transition: opacity 0.2s;
+        }
+    }
+
+    &__list {
+        padding: 0 28px;
+
+        & .btn {
+            font-size: 18px;
+        }
+    }
+}

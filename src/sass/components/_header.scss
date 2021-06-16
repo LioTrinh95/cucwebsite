@@ -1,0 +1,52 @@
+.header {
+    width: 100%;
+    height: 70vh;
+    @include bgImage("/images/1.jpg");
+    background-color: rgba(0, 0, 0, 0.5);
+    @include flexCenter();
+    color: $white;
+
+    &__content {
+        text-align: center;
+
+        &-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &-links {
+            & a {
+                text-decoration: none;
+                color: $white;
+                margin-left: 20px;
+                font-size: 17px;
+            }
+            & a:last-child {
+                text-decoration: none;
+                color: $green;
+                margin-left: 20px;
+                font-size: 17px;
+            }
+        }
+        &-span {
+            display: inline-block;
+            height: 15px;
+            width: 1.5px;
+            background: $white;
+            margin-left: 20px;
+            transform: rotate(10deg);
+        }
+        &-h1 {
+            font-size: 75px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            font-weight: 600;
+
+            @include responsive(765px) {
+                font-size: 50px;
+                font-weight: 500;
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.pomodorobutton {
+    display: flex;
+    justify-content: space-evenly;
+
+    & button {
+        border-color: $green;
+        height: 80px;
+        width: 80px;
+        font-size: 18px;
+
+        color: #fff;
+    }
+    & button:hover {
+        background: #000;
+        transition-duration: 0.5s;
+    }
+
+    &__start {
+        background: #18a69d;
+
+        &--active {
+            background: #fb647f;
+        }
+    }
+
+    &__refresh {
+        background: #4387d0;
+    }
+}

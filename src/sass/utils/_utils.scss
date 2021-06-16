@@ -1,0 +1,15 @@
+.whiteBg {
+    background: $white !important;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+
+    & a {
+        color: $black !important;
+    }
+}
+.transparent {
+    background: transparent;
+
+    & a {
+        color: $white;
+    }
+}

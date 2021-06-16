@@ -1,0 +1,48 @@
+.section {
+    background: $silver;
+    background-color: $white;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+    margin-top: 10px;
+    & a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    & img {
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+        overflow: hidden;
+        background-repeat: no-repeat;
+    }
+
+    &__heading {
+        color: $green;
+        padding: 0.5rem 1rem 1rem;
+        letter-spacing: 0.5px;
+    }
+
+    &__overview {
+        & h3 {
+            padding-bottom: 20px;
+            
+        }
+
+        background-color: #fff;
+        padding: 2rem;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        max-height: 100%;
+        transform: translateY(101%);
+        transition: transform 0.3s ease-in;
+    }
+
+    &:hover &__overview {
+        transform: translateY(0);
+    }
+}

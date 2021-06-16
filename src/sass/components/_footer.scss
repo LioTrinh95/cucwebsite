@@ -1,0 +1,35 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    
+    margin-top: 50px;
+    height: 100px;
+    background-color: #161e29;
+    color: $white;
+
+    &__h4 {
+        font-size: 14px;
+    }
+    
+    &__h6 h4 {
+        text-align: right !important;
+        font-Size: 12px;
+        color: #575757;
+        & span {
+            color: #c4c4c4;
+            padding-left: 4px;
+
+            
+        }
+        @include responsive(765px) {
+            text-align: center !important;
+        }
+
+    }
+
+    @include responsive(765px) {
+        text-align: center;
+    }
+}

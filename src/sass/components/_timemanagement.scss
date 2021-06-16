@@ -1,0 +1,37 @@
+.timemanagement {
+    margin-top: 30px;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2) ;
+    @include responsive(765px) {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    &__tab {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $white;
+        color: $pink;
+        & button {
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: 400;
+            width: 100%;
+            border: none;
+            background: transparent;
+            padding: 10px;
+            @include responsive(765px) {
+                font-size: 16px;
+            }
+        }
+
+        &-stopwatch--active,
+        &-pomodoro--active {
+            color: $green;
+            border-bottom: 1px solid $green !important;
+        }
+    }
+}

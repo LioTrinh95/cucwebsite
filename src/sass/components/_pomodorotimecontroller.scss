@@ -1,0 +1,27 @@
+.pomodorotimecontroller {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+
+    &__button {
+        font-size: 18px;
+        width: 50px;
+        border-radius: 50%;
+
+        &:hover {
+            color: $white;
+            background-color: black;
+        }
+    }
+
+    &__timer {
+        padding: 0px 10px;
+
+        &-mode {
+            color: $green;
+        }
+        &-mins {
+            font-size: 18px;
+        }
+    }
+}

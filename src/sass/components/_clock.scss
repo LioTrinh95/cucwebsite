@@ -1,0 +1,49 @@
+.clock {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    &__needle {
+        background-color: $white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 60px;
+        width: 3px;
+        transform-origin: bottom center;
+        transition: all 0.5s ease-in;
+    }
+    &__hour {
+        transform: translate(-50%, -100%) rotate(0deg);
+    }
+    &__minute {
+        transform: translate(-50%, -100%) rotate(0deg);
+        height: 90px;
+    }
+    &__second {
+        transform: translate(-50%, -100%) rotate(0deg);
+        height: 90px;
+        background-color: #e74c3c;
+    }
+    &__center-point {
+        background-color: #e74c3c;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+
+        &::after {
+            content: "";
+            background-color: black;
+            width: 5px;
+            height: 5px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+        }
+    }
+}

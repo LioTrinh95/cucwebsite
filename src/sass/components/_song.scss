@@ -1,0 +1,17 @@
+.song {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &--active {
+        background: $white;
+        color: $green;
+    }
+    &__play {
+        background-color: transparent;
+        color: $green;
+        font-size: 10px;
+        padding: 2px;
+        cursor: pointer;
+    }
+}
